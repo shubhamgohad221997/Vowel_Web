@@ -45,7 +45,7 @@ const Login = () => {
 
 
   if (isAuth) {
-    if(data.email =="admin@gmail.com" && data.password== "12345"){
+    if(data.email =="admin123@gmail.com" && data.password== "admin123"){
       // alert("Logged in as admin")
       return <Navigate to="/a" />
     }

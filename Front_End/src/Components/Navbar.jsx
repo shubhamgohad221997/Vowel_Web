@@ -15,20 +15,20 @@ const Navbar = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg={useColorModeValue('teal.100', 'teal.900')} px={4}>
+        <Flex h={16} alignItems={'center'} fontSize={"20px"} justifyContent={'space-around'}>
           <Link to="/">Landing Page</Link>
           <Link to="/login">Login</Link>
-          {/* <Link to="/signup">Signup</Link> */}
+          
           <Link to="/cartpage">My Cart</Link>
 
-          <Flex alignItems={'center'}>
+          {/* <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
             </Stack>
-          </Flex>
+          </Flex> */}
         </Flex>
       </Box>
     </>

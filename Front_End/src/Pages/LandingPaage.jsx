@@ -13,7 +13,7 @@ const LandingPaage = () => {
   const [data, setdata] = useState([])
 
   const getdata=()=>{
-    fetch(`http://localhost:8080/products`)
+    fetch(`https://vowels.onrender.com/products`)
     .then((res)=>res.json())
     .then((data)=>{
         setdata(data)
@@ -28,7 +28,7 @@ const LandingPaage = () => {
 
 function handleRemove(e){
    console.log("Remove",e)
-   axios.delete(`http://localhost:8080/products/${e}`)
+   axios.delete(`https://vowels.onrender.com/products/${e}`)
    .then((res)=>getdata())
    .catch((error)=> console.log(error))
 
@@ -45,7 +45,7 @@ const handlechange=(e)=>{
 
 const handleform=async()=>{
 
-  await fetch(`http://localhost:8080/products`,{
+  await fetch(`https://vowels.onrender.com/products`,{
    method:"POST",
    body:JSON.stringify(form),
    headers:{
@@ -96,7 +96,7 @@ const handleform=async()=>{
     <Button>Edit</Button>
     <Button onClick={()=> handleRemove(e._id)}>Delete</Button>
     </Box>
-    {/* <Button>Add to Cart</Button> */}
+   
   </Box>
 ))}
 </Grid>

@@ -14,7 +14,7 @@ const CartPage = () => {
   }
 
   const getdata =()=>{
-    fetch(`https://vowel.onrender.com/cart`)
+    fetch(`https://vowels.onrender.com/cart`)
     .then((res)=>res.json())
     .then((data)=>{
         setdata(data)
@@ -23,7 +23,7 @@ const CartPage = () => {
 
   function handleRemove(e){
    console.log("Remove",e)
-   axios.delete(`https://vowel.onrender.com/cart/${e}`)
+   axios.delete(`https://vowels.onrender.com/cart/${e}`)
    .then((res)=>getdata())
    .catch((error)=> console.log(error))
 
