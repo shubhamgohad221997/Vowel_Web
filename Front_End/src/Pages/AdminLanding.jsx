@@ -7,7 +7,7 @@ import {
  import { Link } from "react-router-dom";
  import  axios from "axios"
 
-const LandingPaage = () => {
+const AdiminLanding = () => {
 
   const [form, setform] = useState({})
   const [data, setdata] = useState([])
@@ -104,4 +104,4 @@ const handleform=async()=>{
   )
 }
 
-export default LandingPaage
+export default AdiminLanding

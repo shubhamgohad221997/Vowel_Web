@@ -7,9 +7,10 @@ import Login from "./Pages/Login"
 import CartPage from "./Pages/CartPage"
 import CheckoutPage from "./Pages/CheckoutPage"
 
-import LandingPaage from "./Pages/LandingPaage"
+
 
 import PrivateRoute from './Components/PrivateRoute';
+import AdiminLanding from './Pages/AdminLanding';
 
 
 function App() {
@@ -25,10 +26,10 @@ function App() {
           
         }/>
         
-        <Route path="/a" element=
+        <Route path="/admin" element=
         {
         <PrivateRoute>
-          <LandingPaage/>
+          <AdiminLanding/>
           </PrivateRoute>
         }/>
         

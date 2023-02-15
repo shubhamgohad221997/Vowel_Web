@@ -47,7 +47,7 @@ const Login = () => {
   if (isAuth) {
     if(data.email =="admin123@gmail.com" && data.password== "admin123"){
       // alert("Logged in as admin")
-      return <Navigate to="/a" />
+      return <Navigate to="/admin" />
     }
     // alert("Logged in as User")
     return <Navigate to="/" />
@@ -55,10 +55,9 @@ const Login = () => {
 
   return (
     <>
-    <Box>
-      <Text fontSize={"30px"}>For Admin use this cred email="admin@gmail.com" password="12345" Else you logged in as user </Text>
-    </Box>
+ 
     <div style={{border:"2px solid", width:"35%", margin:"auto", padding:"30px"}}>
+      <Box>for Admin Login email=admin123@gmail.com & Password is=admin123</Box>
           <form data-testid="login-form" onSubmit={handleSubmit}>
         <div>
           <label>
